@@ -21,10 +21,11 @@ El modelo del proyecto está compuesto por tres clases principales que permiten 
 Esta clase es la responsable de administrar los libros y sus préstamos. Sus principales características son:
 
  - Atributos:
- - 
+
 libros: Una lista de objetos Libro que representan los libros en la biblioteca.
 
  - Métodos:
+
 cargaLibros(): Lee el archivo "Libros.txt" y carga los libros en la lista libros.
 
 getLibros() y setLibros(): Métodos getter y setter para la lista de libros.
@@ -46,6 +47,7 @@ cargaHistorialPrestamosDeUnLibro(Libro libroMostrarHistorial): Devuelve el histo
 Representa un libro dentro de la biblioteca con sus detalles y préstamos asociados.
 
  - Atributos:
+
 titulo: El título del libro.
 autor: El autor del libro.
 isbn: El número ISBN del libro.
@@ -53,6 +55,7 @@ historialPrestamos: Una lista de objetos Prestamo que representa el historial de
 estaPrestado: Un booleano que indica si el libro está prestado o no.
 
  - Métodos:
+
 Getters y setters para cada atributo.
 añadirPrestamo(Prestamo prestamo): Añade un préstamo al historial de préstamos del libro.
 toString(): Devuelve una representación en cadena del libro, incluido su historial de préstamos.
