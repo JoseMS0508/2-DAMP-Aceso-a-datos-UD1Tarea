@@ -13,24 +13,50 @@ El proyecto está estructurado en varios paquetes y clases:
 - modelo: Contiene las clases que representan los modelos de datos.
 - vistas: Contiene la representación visual de las interfaces.
 
-## Clases del modelo
- - GestorBiblioteca:
+## Modelo del Proyecto: Gestión de Biblioteca
 
-Es responsable de administrar la colección de libros.
-Carga y guarda datos de libros y préstamos desde y hacia archivos de texto.
-Implementa funciones de búsqueda de libros por título, autor o ISBN.
-Permite agregar nuevos libros y actualizar la lista de libros.
-Registra préstamos y devuelve información.
+El modelo del proyecto está compuesto por tres clases principales que permiten gestionar una biblioteca y sus préstamos. A continuación, se describe cada una de estas clases:
 
- - Libro:
+1. Clase: GestorBiblioteca
+Esta clase es la responsable de administrar los libros y sus préstamos. Sus principales características son:
 
-Representa un libro con propiedades como título, autor, ISBN, y un registro de préstamos asociados.
-Puede estar en estado prestado o disponible.
-Contiene una lista de préstamos asociados con ese libro.
+Atributos:
+libros: Una lista de objetos Libro que representan los libros en la biblioteca.
+Métodos:
+cargaLibros(): Lee el archivo "Libros.txt" y carga los libros en la lista libros.
+getLibros() y setLibros(): Métodos getter y setter para la lista de libros.
+añadirLibro(Libro libroAAñadir): Añade un libro al archivo "Libros.txt".
+actualizaLibros(ArrayList<Libro> listadoLibrosActualizado): Actualiza el archivo "Libros.txt" con el listado de libros proporcionado.
+añadirPrestamo(Libro libroSeleccionado, Prestamo prestamoAAñadir): Añade un préstamo al historial de préstamos de un libro en el archivo "Historial prestamos.txt".
+guardarHistorialPrestamos(): Guarda el historial completo de préstamos en el archivo "Historial prestamos.txt".
+pasaStringALocalDate(String fechaStringEnviada): Convierte una cadena en un objeto LocalDate.
+cargaHistorialPrestamosDeUnLibro(Libro libroMostrarHistorial): Devuelve el historial de préstamos de un libro específico desde el archivo "Historial prestamos.txt".
 
- - Prestamo:
 
-Representa un préstamo con fechas de inicio y fin, y el nombre del usuario que tiene el préstamo.
-Ofrece una representación de string del período del préstamo.
-Controladores y Vistas
-El proyecto tiene cuatro controladores correspondientes a cada una de las vistas. Las imágenes de las vistas se han proporcionado con el nombre que coincide con cada vista. Estas vistas proporcionan la interacción del usuario con el sistema para realizar diversas tareas, como buscar libros, agregar nuevos títulos, registrar préstamos y devoluciones, entre otros.
+2. Clase: Libro
+Representa un libro dentro de la biblioteca con sus detalles y préstamos asociados.
+
+Atributos:
+titulo: El título del libro.
+autor: El autor del libro.
+isbn: El número ISBN del libro.
+historialPrestamos: Una lista de objetos Prestamo que representa el historial de préstamos de ese libro.
+estaPrestado: Un booleano que indica si el libro está prestado o no.
+Métodos:
+Getters y setters para cada atributo.
+añadirPrestamo(Prestamo prestamo): Añade un préstamo al historial de préstamos del libro.
+toString(): Devuelve una representación en cadena del libro, incluido su historial de préstamos.
+
+
+3. Clase: Prestamo
+Representa un préstamo de un libro a un usuario durante un período de tiempo específico.
+
+Atributos:
+
+fechasDelPrestamo: Un array que contiene la fecha de inicio y de fin del préstamo.
+usuario: El usuario que tomó prestado el libro.
+fechasFormatoStringDelPrestamo: Representación en cadena de las fechas del préstamo.
+Métodos:
+
+Getters y setters para cada atributo.
+toString(): Devuelve una representación en cadena del préstamo.
