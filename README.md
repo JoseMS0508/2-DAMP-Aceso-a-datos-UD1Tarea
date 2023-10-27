@@ -14,7 +14,7 @@ El proyecto está estructurado en varios paquetes y clases:
 - vistas: Contiene la representación visual de las interfaces.
 
 ## Clases del modelo
-GestorBiblioteca:
+ - GestorBiblioteca:
 
 Es responsable de administrar la colección de libros.
 Carga y guarda datos de libros y préstamos desde y hacia archivos de texto.
@@ -22,13 +22,13 @@ Implementa funciones de búsqueda de libros por título, autor o ISBN.
 Permite agregar nuevos libros y actualizar la lista de libros.
 Registra préstamos y devuelve información.
 
-Libro:
+ - Libro:
 
 Representa un libro con propiedades como título, autor, ISBN, y un registro de préstamos asociados.
 Puede estar en estado prestado o disponible.
 Contiene una lista de préstamos asociados con ese libro.
 
-Prestamo:
+ - Prestamo:
 
 Representa un préstamo con fechas de inicio y fin, y el nombre del usuario que tiene el préstamo.
 Ofrece una representación de string del período del préstamo.
