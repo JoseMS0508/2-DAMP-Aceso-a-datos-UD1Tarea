@@ -49,15 +49,21 @@ Representa un libro dentro de la biblioteca con sus detalles y préstamos asocia
  - Atributos:
 
 titulo: El título del libro.
+
 autor: El autor del libro.
+
 isbn: El número ISBN del libro.
+
 historialPrestamos: Una lista de objetos Prestamo que representa el historial de préstamos de ese libro.
+
 estaPrestado: Un booleano que indica si el libro está prestado o no.
 
  - Métodos:
 
 Getters y setters para cada atributo.
+
 añadirPrestamo(Prestamo prestamo): Añade un préstamo al historial de préstamos del libro.
+
 toString(): Devuelve una representación en cadena del libro, incluido su historial de préstamos.
 
 
@@ -67,10 +73,13 @@ Representa un préstamo de un libro a un usuario durante un período de tiempo e
  - Atributos:
 
 fechasDelPrestamo: Un array que contiene la fecha de inicio y de fin del préstamo.
+
 usuario: El usuario que tomó prestado el libro.
+
 fechasFormatoStringDelPrestamo: Representación en cadena de las fechas del préstamo.
 
  - Métodos:
 
 Getters y setters para cada atributo.
+
 toString(): Devuelve una representación en cadena del préstamo.
