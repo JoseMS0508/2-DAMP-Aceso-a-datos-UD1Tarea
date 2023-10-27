@@ -1,0 +1,6 @@
+Romeo y Julieta/Shakespeare/123412341/false
+Luna lunera/Juañares/123443211/false
+Telecinco es lo mejor/Kiko Matamoros/0/false
+Once minutos/Paulo Coelho/12345678/false
+Con quien vengo, vengo/Lope de vega/123456789/true
+España va bien/Aznar/123456789/false
