@@ -72,5 +72,5 @@ fechasFormatoStringDelPrestamo: Representación en cadena de las fechas del pré
 
  - Métodos:
 
-Getters y setters para cada atributo.
+Getters y setters para cada atributo. \n
 toString(): Devuelve una representación en cadena del préstamo.
