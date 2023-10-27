@@ -7,11 +7,11 @@ Este sistema permite a los usuarios interactuar con una interfaz gráfica para b
 El proyecto está estructurado en varios paquetes y clases:
 
 ## Paquetes:
-application: Contiene la clase principal y la lógica de inicio del programa.
-controladores: Contiene los controladores asociados con cada vista.
-imagenes: Almacena las imágenes utilizadas en las vistas.
-modelo: Contiene las clases que representan los modelos de datos.
-vistas: Contiene la representación visual de las interfaces.
+ - application: Contiene la clase principal y la lógica de inicio del programa.
+- controladores: Contiene los controladores asociados con cada vista.
+- imagenes: Almacena las imágenes utilizadas en las vistas.
+- modelo: Contiene las clases que representan los modelos de datos.
+- vistas: Contiene la representación visual de las interfaces.
 
 ## Clases del modelo
 GestorBiblioteca:
